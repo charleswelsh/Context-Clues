@@ -44,9 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
     ]
 
     for (var i = 1; i < 100; i++) {
+        var div = document.createElement("div");
+        document.body.appendChild(div);
         var h3 = document.createElement("h3");
         h3.innerText = `Accusation ${i}`;
-        document.body.appendChild(h3);
+        div.appendChild(h3);
         var details = alertDetails(i)
         h3.addEventListener("click", details)
     };
