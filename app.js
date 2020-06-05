@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         h3.innerText = `Accusation ${i}`;
         div.appendChild(h3);
         var details = alertDetails(i)
-        h3.addEventListener("click", details)
+        div.addEventListener("click", details)
     };
     
     function alertDetails(i) {
